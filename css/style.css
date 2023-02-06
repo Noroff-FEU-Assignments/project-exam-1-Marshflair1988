@@ -1,4 +1,9 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
+    max-width: auto;
     background-color: rgb(0, 0, 0);
 }
 
@@ -45,11 +50,44 @@ h1 {
     font-style: italic;
 }
 
-img {
-    padding: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 20%;
+h2 {
+    color: white;
 }
+
+p {
+    color: white;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.side {
+    width: 25%;
+}
+
+.column.middle {
+    width: 75%;
+}
+
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+    
+}
+
+.container {
+    padding: 20px;
+    max-width: auto;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    max-height: auto;
+    object-fit: fill;
+}
+
+
