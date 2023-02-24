@@ -1,22 +1,88 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta charset="utf-8">
-        <meta name ="viewport" content="width=device-width, initial-scale=1">
-        <title>Home Page</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <header>
-        <h1 class="bartender">The Bartenders blog</h1>
-        <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a class="active" href="contact.html">Contact</a></li>
-        </ul>
-        </nav>
-    </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Blog Website Design Tutorial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">The Bartenders<span class="blog"> Blog</span></a>
+        <ul class="nav-links">  
+            <div class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="blogs">
+                    <a href="blogs.html">Blogs</a>
+                    <ul class="dropdown">
+                        <li><a href="insert page link here">Blog 1</a></li>
+                        <li><a href="insert page link here">Blog 1</a></li>
+                        <li><a href="insert page link here">Blog 1</a></li>
+                        <li><a href="insert page link here">Blog 1</a></li>
+                        <li><a href="insert page link here">Blog 1</a></li>
+                        <li><a href="insert page link here">Full list of blogs</a></li>
+                    </ul>
+                </li>
+                
+            </div>  
+        </ul>
+    </nav>
+        
+</header>
+
+<!-- header section ends -->
+
+<!-- banner section starts  -->
+
+
+<section class="background">
+
+
+<section class="contact" id="contact">
+
+    <form action="">
+        <h3>contact me</h3>
+        <div class="inputBox">
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="email">
+        </div>
+        <div class="inputBox">
+            <input type="number" placeholder="number">
+            <input type="text" placeholder="subject">
+        </div>
+        <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+</section>
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="follow">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+
+</section>
+
+<!-- footer section ends -->
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+    
+</body>
 </html>

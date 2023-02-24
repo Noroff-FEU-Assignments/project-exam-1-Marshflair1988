@@ -1,22 +1,113 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta charset="utf-8">
-        <meta name ="viewport" content="width=device-width, initial-scale=1">
-        <title>Home Page</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <header>
-        <h1 class="bartender">The Bartenders blog</h1>
-        <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>The Bartenders Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">The Bartenders<span class="blog"> Blog</span></a>
+        <ul class="nav-links">
+            <div class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="blogs">
+                    <a href="blogs.html">Blogs</a>
+                    <ul class="dropdown">
+                        <li><a href="insert page link here">Blog 1</a></li>
+                        <li><a href="insert page link here">Blog 1</a></li>
+                        <li><a href="insert page link here">Blog 1</a></li>
+                        <li><a href="insert page link here">Blog 1</a></li>
+                        <li><a href="insert page link here">Blog 1</a></li>
+                        <li><a href="insert page link here">Full list of blogs</a></li>
+                    </ul>
+                </li>
+                
+            </div>  
         </ul>
-        </nav>
-    </header>
+    </nav>
+        
+</header>
+<main>
 
+    <section class="blogcontainer" id="blogposts">
+        <div class="posts-container">
+            <div class="post">
+                <img src="images/slowpour.jpg" alt="" class="image">
+                <div class="date">
+                    <i class="far fa-clock"></i>
+                    <span>1st May, 2023</span>
+                </div>
+                <h3 class="title">Blog title goes here</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum molestias rerum numquam, quos aut est culpa quisquam excepturi sed a inventore dicta tempore consequuntur possimus magnam corporis cum doloremque quasi fugiat exercitationem aliquid cupiditate pariatur. Dolor laboriosam voluptatem ex praesentium magni error debitis maxime alias autem distinctio. Fuga, esse velit!</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, reiciendis fugiat quas nemo quia omnis repellat obcaecati quaerat voluptates fuga error dicta cupiditate pariatur soluta dolorum quis eum quibusdam quam?</p>
+                <div class="links">
+                    <a href="#" class="user">
+                        <i class="far fa-user"></i>
+                        <span>Written by Marsh Woolgar</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+            <div class="sidebar">
+        
+                <div class="box">
+                    <h3 class="title">Index</h3>
+                        <div class="p-post">
+                            <a href="#">
+                            <h3>01. blog title goes here</h3>
+                            <span><i class="far fa-clock"></i>1st may, 2021</span>
+                            </a>
+                            <a href="#">
+                            <h3>02. blog title goes here</h3>
+                            <span><i class="far fa-clock"></i>1st may, 2021</span>
+                            </a>
+                            <a href="#">
+                            <h3>03. blog title goes here</h3>
+                            <span><i class="far fa-clock"></i>1st may, 2021</span>
+                            </a>
+                            <a href="#">
+                            <h3>04. blog title goes here</h3>
+                            <span><i class="far fa-clock"></i>1st may, 2021</span>
+                            </a>
+                        </div>
+                </div>
+        
+            </div>
+            <div>
+                <h3 class="top">Back to Top</h3>            
+            </div>
+        
+        </section>
+        
+
+        <section class="footer">
+        
+            <div class="follow">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        
+        </section>
+        
+        <!-- footer section ends -->
+
+        <!-- custom js file link  -->
+        <script src="js/script.js"></script>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
 </html>

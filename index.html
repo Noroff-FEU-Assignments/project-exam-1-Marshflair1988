@@ -1,40 +1,97 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta charset="utf-8">
-        <meta name ="viewport" content="width=device-width, initial-scale=1">
-        <title>Home Page</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-    <header>
-        <h1 class="bartender">The Bartenders blog</h1>
-        <nav>
-        <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>The Bartenders Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">The Bartenders<span class="blog"> Blog</span></a>
+        <ul class="nav-links">  
+            <div class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="blogs">
+                    <a href="blogs.html">Blogs</a>
+                    <ul class="dropdown">
+                        <li><a href="insert page link here">Blog 1</a></li>
+                        <li><a href="insert page link here">Blog 1</a></li>
+                        <li><a href="insert page link here">Blog 1</a></li>
+                        <li><a href="insert page link here">Blog 1</a></li>
+                        <li><a href="insert page link here">Blog 1</a></li>
+                        <li><a href="insert page link here">Full list of blogs</a></li>
+                    </ul>
+                </li>
+                
+            </div>  
         </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <img src="images/smokybar.jpg">
+    </nav>
+        
+</header>
+<main>
+    <section class="banner" id="banner">
+        <div class="content">
+            <img class="image" src="images/bar-g294017d1b_1920.jpg">
+            <h3>explore the nature</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias praesentium, omnis totam, harum.</p>
+            <a href="blogs.html"> Blogs</a>
         </div>
-        <div class="row">
-            <div class="column middle">
-                <h2>Main Content</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda pariatur ea, nisi fugit vero facilis maiores fuga reprehenderit ut porro expedita dolores deleniti doloremque tempora veniam quo accusantium aperiam quis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fuga enim eveniet doloremque quo possimus doloribus mollitia sed animi, explicabo officiis expedita consequatur. Aperiam placeat laudantium fugiat, deleniti ex vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore repellendus itaque at aspernatur suscipit, asperiores explicabo nulla provident. Reiciendis eum quis amet quam tempore deserunt minus aut unde exercitationem libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta illo nemo repellendus accusamus enim? Labore voluptate esse nesciunt sunt delectus eveniet, qui ea eum aperiam doloremque odit autem, velit deleniti!</p>
-            </div>
-            <div class="column side">
-                <h2>Right Side</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ex sed praesentium adipisci. Reiciendis adipisci, expedita quia odit, id maxime at aperiam libero dolorem beatae nesciunt nihil cum ullam dicta?</p>
+    </section>
+
+    <section class="container" id="posts">
+        <div class="posts-container">
+            <div class="post">
+                <img src="images/slowpour.jpg" alt="" class="image">
+                <div class="date">
+                    <i class="far fa-clock"></i>
+                    <span>1st May, 2023</span>
+                </div>
+                <h3 class="title">Blog title goes here</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum molestias rerum numquam, quos aut est culpa quisquam excepturi sed a inventore dicta tempore consequuntur possimus magnam corporis cum doloremque quasi fugiat exercitationem aliquid cupiditate pariatur. Dolor laboriosam voluptatem ex praesentium magni error debitis maxime alias autem distinctio. Fuga, esse velit!</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, reiciendis fugiat quas nemo quia omnis repellat obcaecati quaerat voluptates fuga error dicta cupiditate pariatur soluta dolorum quis eum quibusdam quam?</p>
+                <div class="links">
+                    <a href="#" class="user">
+                        <i class="far fa-user"></i>
+                        <span>Written by Marsh Woolgar</span>
+                    </a>
+                </div>
             </div>
         </div>
-       
-    </main>
-    </body>
+        
+        </section>
+        
+        <!-- posts section ends -->
+    
+        
+        <!-- footer section starts  -->
+        
+        <section class="footer">
+        
+            <div class="follow">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        
+        </section>
+        
+        <!-- footer section ends -->
+        
+        <!-- custom js file link  -->
+        <script src="js/script.js"></script>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
 </html>
