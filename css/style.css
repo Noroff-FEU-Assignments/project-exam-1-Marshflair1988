@@ -38,7 +38,7 @@ section{
 
 .btn{
     margin-top: 1rem;
-    display: inline-block;
+    display: ;
     background:var(--black);
     color:#fff;
     border-radius: .5rem;
@@ -514,7 +514,7 @@ section{
     max-width: auto;
     margin: 25px;
     padding: 5rem;
-    background-color: #eb3939;
+    background-color: #ffffff;
     z-index: -1;
 }
 
