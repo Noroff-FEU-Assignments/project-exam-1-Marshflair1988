@@ -65,7 +65,6 @@ html{
     color: #fff;
 }
     
-    /* LOGO */
     
 .logo {
     font-size: 38px;    
@@ -78,7 +77,6 @@ html{
     color: white;
 }
     
-    /* NAVBAR MENU */
     
 .menu {    
     display: flex;
@@ -96,7 +94,6 @@ html{
     padding: 5px 14px;
 }
     
-    /* DROPDOWN MENU */
     
 .services {
     position: relative; 
@@ -105,7 +102,7 @@ html{
 .dropdown {
     background-color: rgb(1, 139, 139);
     padding: 1em 0;
-    position: absolute; /*WITH RESPECT TO PARENT*/
+    position: absolute;
     display: none;
     border-radius: 8px;
     top: 35px;
