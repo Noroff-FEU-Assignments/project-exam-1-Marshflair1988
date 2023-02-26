@@ -1,27 +1,20 @@
-let menu = document.querySelector('#menu-bars');
-let navbar = document.querySelector('.navbar');
 
-menu.onclick = () =>{
-  menu.classList.toggle('fa-times');
-  navbar.classList.toggle('active');
-  searchIcon.classList.remove('fa-times');
-  searchForm.classList.remove('active');
+
+const form = document.querySelector(".contactForm");
+const fullName = document.querySelector("#fullName");
+const fullNameError = document.querySelector("#fullNameError");
+const email = document.querySelector("#email");
+const emailError = document.querySelector("#emailError");
+const subject = document.querySelector("#subject");
+const subjectError = document.querySelector("#subjectError");
+const message = document.querySelector("#message");
+const messageError = document.querySelector("#messageError");
+
+
+function validateForm() {
+    event.preventDefault();
+
+    console.log("hello");
 }
 
-let searchIcon = document.querySelector('#search-icon');
-let searchForm = document.querySelector('.search-form');
-
-searchIcon.onclick = () =>{
-  searchIcon.classList.toggle('fa-times');
-  searchForm.classList.toggle('active');
-  menu.classList.remove('fa-times');
-  navbar.classList.remove('active');
-}
-
-window.onscroll = () =>{
-  menu.classList.remove('fa-times');
-  navbar.classList.remove('active');
-  searchIcon.classList.remove('fa-times');
-  searchForm.classList.remove('active');
-}
-
+form.addEventListener("submit", validateForm)

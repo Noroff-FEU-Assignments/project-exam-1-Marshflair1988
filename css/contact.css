@@ -1,0 +1,235 @@
+:root{
+    --light-red:#eb3939;
+    --black:#000000;
+    --light-color:#777;
+    --border:.1rem solid rgba(0,0,0,0);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+
+*{ 
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    font-family: 'Abril Fatface';
+    font-weight: lighter;
+}
+
+a {
+    text-decoration: none;
+}
+    
+li {
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+.header{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    padding:1.2rem 7%;
+}
+
+.header .logo{
+    color:var(--black);
+    font-size: 2.5rem;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.header .logo span{
+    color:var(--light-red);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+}
+    
+.nav-links a {
+    color: #fff;
+}
+    
+    /* LOGO */
+    
+.logo {
+    font-size: 38px;    
+    font-family: 'Abril Fatface';
+    color: black;
+}
+
+.blog {
+    font-family: 'Abril Fatface';
+    color: white;
+}
+    
+    /* NAVBAR MENU */
+    
+.menu {    
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+    
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+    
+.menu li {
+    padding: 5px 14px;
+}
+    
+    /* DROPDOWN MENU */
+    
+.services {
+    position: relative; 
+}
+    
+.dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+    
+.dropdown li + li {    
+    margin-top: 10px;
+}
+    
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;    
+    text-align: center;
+}
+    
+.dropdown li:hover {   
+    background-color: #4c9e9e;
+}
+    
+.services:hover .dropdown {    
+    display: block; 
+}
+
+input[name=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[name=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[name=submit]:hover {
+  background-color: #eb3939;
+}
+
+.errors {
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+.form-error {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  height: 80rem;
+}
+
+.contactme {
+    font-family: 'abril fatface';
+    font-size: 70px;
+    text-align: center;
+}
+
+.contact {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+
+.messagetext {
+    position: relative;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+.footer{
+    position: fixed;
+    z-index: 1000;
+    background: teal;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    padding:1.2rem 7%;
+    justify-content: space-between;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.footer .follow{
+    padding: 1rem 0;
+}
+
+.footer .follow a{
+    height:4.5rem;
+    line-height:4.5rem;
+    width:4.5rem;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    background:var(--black);
+    color:#fff;
+    margin:0 .1rem;
+    text-align: center;
+}
+
+.footer .follow a:hover{
+    background:var(--light-red);
+}

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete Responsive Blog Website Design Tutorial</title>
+    <title></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
 
 </head>
 <body>
@@ -38,37 +38,36 @@
     </nav>
         
 </header>
-
-<!-- header section ends -->
-
-<!-- banner section starts  -->
-
-
-<section class="background">
-
-
-<section class="contact" id="contact">
-
-    <form>
-        <h3>contact me</h3>
-        <div class="inputBox">
-            <input name="text" placeholder="name" id="fullName">
-            <input name="email" placeholder="email" id="email">
+<main>
+<div class="container">
+    <div>
+      <h2 class="contactme">Contact Me</h2>
         </div>
-        <div class="inputBox">
-            <input name="number" placeholder="number" id="number">
-            <input name="text" placeholder="subject" id="subject">
+        <div class="contact">
+            <form id="contactForm">
+                <label>Full Name (Required)
+                    <input name="text" id="fullName" placeholder="John Smith">
+                </label>
+                <div class="form-error" id="fullNameError"><h3 class="errors">Please enter your first name</h3></div>
+
+                <label>Email (Required)</label>
+                    <input name="text" id="email" placeholder="johnsmith@gmail.com">
+                </label>
+                <div class="form-error" id="emailError"><h3 class="errors">Please provide a valid email address</h3></div>
+                <label> Subject (Minimum 15 characters)
+                    <input name="text" id="subject" placeholder="How do i get involved?"> 
+                </label>
+                <div class="form-error" id="subjectError"><h3 class="errors">Should be more than 15 characters</h3></div>
+                <label>Message (Minimun 25 characters)
+                    <input name="text" class="messagetext" id="message" placeholder="Write your message here" style="height:170px">
+                </label>
+                <div class="form-error" id="messageError"><h3 class="errors">Should be more than 25 characters</h3></div>
+                <input name="submit" value="Submit">
+            </form>
         </div>
-        <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
-        <input type="submit" value="send message" class="btn">
-    </form>
-</section>
-</section>
-
-<!-- contact section ends -->
-
-<!-- footer section starts  -->
-
+    </div>
+</div>
+</main>
 <section class="footer">
 
     <div class="follow">
@@ -80,9 +79,7 @@
 
 </section>
 
-<!-- footer section ends -->
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-    
+
+<script async src="js/script.js"></script>
 </body>
 </html>

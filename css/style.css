@@ -8,7 +8,8 @@
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
 
-*{
+
+*{ 
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border:none;
@@ -559,20 +560,21 @@ section{
 }
 
 .contact form .inputBox input{
-    width:49%;
+    width:300px;
 }
 
+
 .footer{
-    position: relative;
+    position: fixed;
     z-index: 1000;
     background: teal;
     box-shadow: var(--box-shadow);
     display: flex;
     align-items: center;
     padding:1.2rem 7%;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
+    bottom: 0;
+    width: 100%;
 }
 
 
