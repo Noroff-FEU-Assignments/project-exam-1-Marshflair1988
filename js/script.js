@@ -1,29 +1,11 @@
-const url = "https://cat-fact.herokuapp.com/facts";
+const API = "https://good-food-mood.marshwoolgar.no/wp-json/wp/v2/posts"; 
 
-const resultsContainer = document.querySelector(".results");
 
-async function getCats() {
+fetch(API)
+   .then((res) => res.json())
+   .then((data) => {
+       /*Here you write what to do with the data fetched from the api*/
+        })
+   .catch((error) => console.error(error));
 
-    const response = await fetch(url);
-
-    const data = await response.json();
-
-    console.log(data);
-
-    const facts = data.all;
-
-    resultsContainer.innerHTML = "";
-
-    for (let i = 0; i < facts. length; i++) {
-        console.log(facts[i].text);
-
-        if (i === 10) {
-            break;
-        }
-
-        resultsContainer.innerHTML += `<div class="result">${facts[i].text}</div>`;
-
-    }
-}
-
-getCats();
+   console.log();
