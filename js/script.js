@@ -1,58 +1,29 @@
+const url = "https://cat-fact.herokuapp.com/facts";
 
+const resultsContainer = document.querySelector(".results");
 
-const form = document.querySelector("#contactForm");
-const fullName = document.querySelector("#fullName");
-const fullNameError = document.querySelector("#fullNameError");
-const email = document.querySelector("#email");
-const emailError = document.querySelector("#emailError");
-const subject = document.querySelector("#subject");
-const subjectError = document.querySelector("#subjectError");
-const message = document.querySelector("#message");
-const messageError = document.querySelector("#messageError");
+async function getCats() {
 
+    const response = await fetch(url);
 
-function validateForm() {
-    event.preventDefault();
+    const data = await response.json();
 
-    if (checkLength(fullName.value, 5) === true) {
-        fullNameError.style.display = "none";
-    } else {
-        fullNameError.style.display = "block";
-    }
+    console.log(data);
 
-    if (checkLength(email.value, 3) === true) {
-        emailError.style.display = "none";
-    } else {
-        emailError.style.display = "block";
-    }
+    const facts = data.all;
 
-    if (validateEmail(subject.value) === true) {
-        subjectError.style.display = "none";
-    } else {
-        subjectError.style.display = "block";
-    }
+    resultsContainer.innerHTML = "";
 
-    if (checkLength(message.value) === true) {
-        messageError.style.display = "none";
-    } else {
-        messageError.style.display = "block";
-    }
+    for (let i = 0; i < facts. length; i++) {
+        console.log(facts[i].text);
 
-    console.log("hello");
-}
+        if (i === 10) {
+            break;
+        }
 
-form.addEventListener("submit", validateForm);
+        resultsContainer.innerHTML += `<div class="result">${facts[i].text}</div>`;
 
-function checkLength(value, len) {
-    if (value.trim().length > len) {
-        return true;
-    } else {
-        return false;
     }
 }
 
-function validateEmail(email) {
-    const regEx = /\S+@\S+\.\S+/;
-    const patternMatches = regEx.test(email);
-    return patternMatches;
-}
+getCats();

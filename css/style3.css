@@ -186,8 +186,22 @@ body {
     font-size: 1.5rem;
     margin-block-start: 25px;
 }
+
+
+/*About Page*/
+
+.containerabout {
+    text-align: center;
+}
+
+.containerabout p {
+    font-size: 30px;
+}
   
-  
+.spancontact:hover {
+    color: #38c93f;
+    
+}
   
 @media (min-width: 575px) {
 
@@ -242,32 +256,19 @@ body {
   
 @media (min-width: 768px) {
   
-    /**
-     * CUSTOM PROPERTY
-     */
   
     :root {
   
-      /**
-       * typography
-       */
   
         --fs-1: 7.2rem;
         --fs-2: 5.5rem;
-  
-      /**
-       * radius
-       */
+
   
         --radius-16: 26px;
   
     }
   
   
-  
-    /**
-     * REUSED STYLE
-     */
   
     .section { 
         margin-inline: 50px; 
@@ -278,10 +279,6 @@ body {
     }
   
   
-    /**
-     * RECENT POST
-     */
-  
     .recent .title-wrapper {
       display: flex;
       justify-content: space-between;
@@ -289,20 +286,12 @@ body {
     }
   
   
-    /**
-     * RECOMMENDED POST
-     */
-  
     .recommended .grid-list {
       grid-template-columns: repeat(4, 1fr);
       column-gap: 15px;
     }
   
   
-  
-    /**
-     * FOOTER
-     */
   
     .footer-top { 
         grid-template-columns: repeat(4, 1fr); 
@@ -318,13 +307,7 @@ body {
   
   }
   
-  
-  
-  
-  
-  /**
-   * responsive for large than 992px screen
-   */
+
   
   @media (min-width: 992px) {
   
@@ -663,4 +646,66 @@ body {
     max-width: 700px;
     font-weight: 500;
     font-size: 1.2rem;
+  }
+
+  .footer { padding-block: 40px 20px; }
+  
+  .section.footer-top { 
+      border-block-end: none; 
+  }
+  
+    
+  .footer-top {
+      display: grid;
+      gap: 25px;
+  }
+  
+  .footer-text {
+      font-size: var(--fs-5);
+      font-weight: var(--fw-500);
+      line-height: 1.4;
+  }
+    
+  .footer-list .h5 {
+      font-weight: var(--fw-700);
+      margin-block-end: 15px;
+  }
+  
+  .footer-list {
+      list-style: none;
+      grid-column-start: 2;
+      grid-column-end: 4;
+  }
+  
+  .footer-list li {
+      display: inline;
+  }
+    
+  .footer-list-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      grid-column-start: 3;
+      grid-column-end: 5;
+  }
+    
+  .footer-list-item ion-icon {
+      font-size: 18px;
+      flex-shrink: 0;
+  }
+    
+  .footer-link {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-block-start: 8px;
+  }
+  
+  .section-copyright {
+      grid-column-start: 4;
+      grid-column-end: 5;
+  }
+    
+  .copyright {
+      font-size: 1.5rem;
+      margin-block-start: 25px;
   }
