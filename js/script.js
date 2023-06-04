@@ -1,4 +1,4 @@
-const homePageRecipes = "https://good-food-mood.marshwoolgar.no/wp-json/wp/v2/posts?";
+/*const homePageRecipes = "https://good-food-mood.marshwoolgar.no/wp-json/wp/v2/posts?";
 
     const fetchRecipes = async () =>{
       await fetch(homePageRecipes)
@@ -31,3 +31,18 @@ const homePageRecipes = "https://good-food-mood.marshwoolgar.no/wp-json/wp/v2/po
     }
 
 fetchRecipes();
+*/
+
+baseUrl = "https://good-food-mood.marshwoolgar.no/wp-json/wp/v2/posts";
+const blogContainer = document.querySelector(".title");
+
+async function getBlogs(url){
+    const response = await fetch(url);
+    const blogs = await response.json();
+    blogs.forEach(function(blog){
+        blogContainer.innerHTML += `
+        <p class=content>${blog.title.rendered}</p>`
+    })
+}
+
+getBlogs(baseUrl);
