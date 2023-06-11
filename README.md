@@ -1,67 +1,59 @@
-## Project Exam 1
+Community-Science-Museum
 
-## Goal
+![image](Pictures/Homepage.png)
 
-To put into practice the skills learned over your first year of studies.
+## Description
 
-## Brief
-You have been tasked with creating a blog site. You can choose the design and topics covered on the blog, but it should have at least the following pages:
--	Home page
--	About page
--	List of blog posts
--	Blog post specific pages
--	Contact page.
+Community Science Museum is an interactive website designed for a core target audience consisting of primary and middle school children (ages 7-15) and families with young children. 
+The aim is to be an informative, appealing website to attract middle school pupils and their parents to the museum.
+The website consists of 6 pages.
 
-### Home Page
-The home page should have a ‘Latest Posts’ section which uses a carousel (slider) for users to click to view more posts. For example, by default the user can see four posts, then they can click an arrow on the right to view the next four posts, and click it again to view the next four posts. The user can also click back to view results they had previously seen. This must be implemented for desktop at least, but if you want a simpler layout for mobile, you can change it from being in a carousel.
+- Home Page
+- Explore
+- Exhibition Spaces
+- Visit
+- Get involved
+- Special Events
 
-### Blog Page
+## Built With
 
-The blog posts page should show the first 10 blogs, and the user should click to view more results which then show underneath the first 10 blogs.
+The webpage was Designed using Wireframes and Prototyping, using the software Adobe XD. 
+The hard coding was implemented with HTML and CSS and was performed on the software Visual Studio Code.
 
-### Blog Specific Page
+- [Wireframes/Prototype](https://www.adobe.com/no/)
+- [HTML/CSS](https://code.visualstudio.com/)
 
-The content of the blog specific page should be dynamically built using a query string parameter based on whatever link the user clicked. The title of the blog specific page should change based on the blog that has been clicked on e.g. “My Blog | An Article I Wrote”.
 
-If images on the blog post page are clicked, a modal should appear giving the user a bigger view of that image. Clicking outside the image should hide the modal.
+### Installing
 
-### Contact page
+1. Clone the repo:
 
-Create a contact us page, there should be 4 textboxes on this page.
--	Name (Should be more than 5 characters long)
--	Email address (Must be a valid email address)
--	Subject (Should be more than 15 characters long)
--	Message content (Should be more than 25 characters long)
+```bash
+gh repo clone Marshflair1988/Community-Science-Museum
+```
 
-Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
+2. Install the Github Desktop application:
 
-### WordPress
+```
+Install Github Desktop and link with your github account (https://desktop.github.com/)
+```
 
-The content for your website will be stored on a WordPress installation used as a Headless CMS. It’s important to note that we are only using WordPress to provide an API and add content for the blog. You should not submit a link to a WordPress site, but build your website using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data. 
+### Running
 
-The project has two aspects:
--	API from your WordPress installation
--	Your website built with HTML, CSS and JavaScript
+Once Github desktop is installed and configurated..
+Step 1 - Come back to this repo, Click on code and select open with Github Desktop
+Step 2 - Once github desktop has opened, select the Clone option and wait for that to finish cloning.
+Step 3 - Click open with visual studio code to get the raw code data up.
 
-You will need to add at least 12 blogs for your website. You can use lorem ipsum for paragraphs if you need, but headings, images etc. should all make sense.
 
-Note that this is an exam, and therefore tutor support will be limited as per the study plan.
+## Contributing
 
-## Level 1 Process
+Make sure that any editing done on the repo is documented and make sure to push your changes to the github repo.
 
-1.	Decide on the theme for the blog you’re going to make
-2.	Create a prototype of the website
-3.	Install WordPress on your web host and add the blogs on the admin panel. 
-4.	Use the GitHub repo created by GitHub Classroom for your files and deploy to Netlify
-5.	Build your website using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch your data.
-6.	Install Hotjar on your website.
-7.	Ask users to test your website, and adjust based on their feedback and any insights from Hotjar.
-8.	Write a report documenting your project (template provided in this repository).
-9.	Submit your report as a PDF and a link to both your Netlify deployment and your GitHub repo.
- 
-## Level 2 Process (optional)
+## Contact
 
-1.	You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for. 
-2.	Post the data from the contact form to WordPress so you have the details saved.
-3.	Allow users to submit comments on a blog post, and post this data to WordPress
+Socials:
 
+[My Twitter page](http://www.twitter.com/Only_Marsh)
+
+[My LinkedIn page](http://www.linkedin.com/in/mwoolgar)
