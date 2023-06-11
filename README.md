@@ -1,27 +1,23 @@
 Community-Science-Museum
 
-![image](Pictures/Homepage.png)
+![image](images/Goodfoodmood.png)
 
 ## Description
 
-Community Science Museum is an interactive website designed for a core target audience consisting of primary and middle school children (ages 7-15) and families with young children. 
-The aim is to be an informative, appealing website to attract middle school pupils and their parents to the museum.
-The website consists of 6 pages.
+Good food Mood is a website designed to give healthy recipes, on quick and easy meals for people that dont want to spend hours in the kitchen.
 
 - Home Page
-- Explore
-- Exhibition Spaces
-- Visit
-- Get involved
-- Special Events
+- Posts
+- About Us
+- Contact Us
 
 ## Built With
 
 The webpage was Designed using Wireframes and Prototyping, using the software Adobe XD. 
-The hard coding was implemented with HTML and CSS and was performed on the software Visual Studio Code.
+The hard coding was implemented with HTML/CSS/javascript and was performed on the software Visual Studio Code.
 
 - [Wireframes/Prototype](https://www.adobe.com/no/)
-- [HTML/CSS](https://code.visualstudio.com/)
+- [HTML/CSS/Javascript](https://code.visualstudio.com/)
 
 
 ### Installing
@@ -29,7 +25,7 @@ The hard coding was implemented with HTML and CSS and was performed on the softw
 1. Clone the repo:
 
 ```bash
-gh repo clone Marshflair1988/Community-Science-Museum
+gh repo clone Noroff-FEU-Assignments/project-exam-1-Marshflair1988
 ```
 
 2. Install the Github Desktop application:
